@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://meme_.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.android.meme_generator.top_section"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fragment2"
+        tools:layout="@layout/top_section"
+        android:layout_marginBottom="10dp"/>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.android.meme_generator.image_section"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/image_section" />
+</RelativeLayout>

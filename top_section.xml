@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black">
+
+    <EditText
+        android:id="@+id/memeline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:hint="Enter text for top line"
+        android:textColor="@color/colorPrimary"
+        android:inputType="textCapWords" />
+    <EditText
+        android:id="@+id/memeline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:hint="Enter text for bottom line"
+        android:layout_below="@id/memeline1"
+        android:inputType="textCapWords" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memeline2"
+        app:cardElevation="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+        <Button
+            android:id="@+id/addLineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="add dope lines"
+            android:background="@drawable/buttoncolor"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
